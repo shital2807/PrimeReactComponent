@@ -24,7 +24,7 @@ const GrocTable: React.FC = () => {
   const [first, setFirst] = useState<number>(0);
   const [rows, setRows] = useState<number>(12);
   const [selectedArtworks, setSelectedArtworks] = useState<Artwork[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [_currentPage, setCurrentPage] = useState<number>(1);
 
   const op = useRef<OverlayPanel>(null);
   const toast = useRef<Toast>(null);
